@@ -1,0 +1,11 @@
+main {
+    height: 100vh;
+    margin: 0 auto;
+    width: 98%;
+    background-color: #f7e1d7;
+}
+
+:host {
+    background-color: #edafb8;
+    display: flex;
+}
