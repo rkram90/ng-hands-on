@@ -1,0 +1,8 @@
+@for( todo of todos; track  todo.id) {
+   <app-todo-item [todo]="todo"></app-todo-item>
+}
+
+
+<div><input type="text" (keyup)="changeText()" /></div>
+
+<div><button (click)="changeArray()">Change array</button></div>

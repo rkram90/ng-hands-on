@@ -1,30 +1,3 @@
 <main>
-  <app-tabs>
-    <ng-template tap-item name="Home">This is Home page</ng-template>
-    <ng-template tap-item name="Contact us"> This is Contact us page</ng-template>
-  </app-tabs>
-  <hr/>
-  <h2>More example on templateOutlet</h2>
-  <div class="container">
-    <app-weather-widget [headerTemplate]="altHeader" [contentTemplate]="altContent" [actionTemplate]="altAction">
-    </app-weather-widget>
-    <ng-template #altHeader>
-      <div class="alt-header"> Today's weather </div>
-    </ng-template>
-    <ng-template #altContent let-state>
-      <div>
-        <span>🌡 {{state.data.temperature}}°C</span> - 
-        <span>{{state.data.skyCondition === 'sunny' ? '☀️' : '☁️'}}</span> - 
-        <span>🌬️ {{state.data.windspeed}}m/s</span>
-      </div>
-    </ng-template>
-    <ng-template #altAction>
-      <app-custom-weather-action></app-custom-weather-action>
-    </ng-template>
-  </div>
+  <router-outlet />
 </main>
-
-
-
-
-<router-outlet />

@@ -9,8 +9,8 @@ import {
   ViewChildren,
   ViewContainerRef,
 } from '@angular/core';
-import { TabItemDirective } from './directives/tab-item.directive';
 import { NgFor, NgTemplateOutlet } from '@angular/common';
+import { TabItemDirective } from '../../directives/tab-item.directive';
 
 @Component({
   selector: 'app-tabs',
