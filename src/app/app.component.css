@@ -9,3 +9,19 @@ main {
     background-color: #edafb8;
     display: flex;
 }
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
