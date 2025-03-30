@@ -18,4 +18,16 @@ export const routes: Routes = [
     loadChildren: () =>
       import('src/app/form/form.routes').then((m) => m.FORMS_ROUTES),
   },
+  {
+    path: 'web-worker',
+    loadComponent: () =>
+      import(
+        'src/app/paint-img-by-web-worker/paint-img-by-web-worker.component'
+      ).then((m) => m.PaintImgByWebWorkerComponent),
+  },
+  {
+    path: 'ag-grid',
+    loadChildren: () =>
+      import('src/app/ag-grid/ag-grid.routes').then((m) => m.GRID_ROUTES),
+  },
 ];

@@ -1,0 +1,10 @@
+<p>paint-img-by-web-worker works!</p>
+<header>
+    <h3>Paint your uploaded image, proccessed by web worker</h3>
+    <button (click)="applyFilter()">Apply Filter</button>
+  </header>
+  <main>
+    <input type="file" (change)="loadImage($event)" value="Select File" />
+  
+    <canvas #imagePreview></canvas>
+  </main>
